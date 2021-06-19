@@ -1,0 +1,80 @@
+{
+  "name": "cra-template-zx-simple-2021",
+  "description": "CRA template for simple React.js apps.",
+  "keywords": [
+    "react",
+    "create-react-app",
+    "cra-template",
+    "template",
+    "redux",
+    "react-redux",
+    "react-router",
+    "react-router-dom"
+  ],
+  "version": "1.0.0",
+  "license": "MIT",
+  "author": "Ilya Pomazkin <ipomazkin.dev@pm.me>",
+  "engines": {
+    "node": ">=10"
+  },
+  "private": false,
+  "main": "template.json",
+  "files": [
+    "template",
+    "template.json"
+  ],
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "axios": "^0.21.1",
+    "connected-react-router": "^6.9.1",
+    "date-fns": "^2.22.1",
+    "debounce": "^1.2.1",
+    "history": "4.10.1",
+    "immer": "^9.0.3",
+    "node-sass": "5.0.0",
+    "prop-types": "^15.7.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-redux": "^7.2.4",
+    "react-router": "^5.2.0",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "4.0.3",
+    "redux": "^4.1.0",
+    "redux-logger": "^3.0.6",
+    "redux-saga": "^1.1.3"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "clean-files": "rm -rf ./template/public ./template/src && rm -f ./template/README.md",
+    "copy-files": "cp -a ./src/. template/src && cp -a ./public/. template/public && cp README.md template/",
+    "prepublishOnly": "yarn clean-files && yarn copy-files"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ipomazkin/cra-simple-2021",
+    "directory": "/"
+  }
+}
